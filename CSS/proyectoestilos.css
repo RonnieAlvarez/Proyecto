@@ -159,7 +159,7 @@ ion-icon {
 }
 .submaincontainer .bienvenida {
   font-family: "Cormorant", serif;
-  font-size: 5vw;
+  font-size: 4rem;
   transition-property: color, color, rigth;
   transition-duration: 3s;
   color: #e8c1cc;
