@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 100%;
+  
+}
+
+.divbody {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100%;
+  color: #301b21;
+  height: 100vh;
+  width: 100vw;
+  font-size: 1vh;
+}
+/* 
+font-family: 'Cormorant', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Inicio de Encabezado */
+.headerContainer_ {
+  display: flex;
+  flex-direction: row;
+  background-color: #301b21;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.header_ {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: auto;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.horizontal li a {
+  display: block;
+  color: #e8c1cc;
+  text-align: center;
+  padding: 0rem 2vw;
+  text-decoration: none;
+  border-radius: 1vw;
+  font-size: 2.5vh;
+}
+.horizontal li a:hover {
+  background-color: #e8c1cc87;
+  color: #301b21;
+  border-radius: 1vw;
+}
+.activomenu {
+  background-color: #e8c1cc87;
+  color: #301b21 !important;
+  border-radius: 1vw;
+}
+
+ion-icon {
+  font-size: 3vh;
+  color: #e8c1cc;
+  margin-right: 1vh;
+}
+.sociales {
+  display: flex;
+  padding: 1% 4%;
+  color: #e8c1cc;
+  align-items: center;
+  font-size: 2vh;
+}
+.sociales .telefono {
+  margin-right: 0.8vw;
+  font-size: 2.5vh;
+}
+.logo {
+  display: flex;
+  font-family: "Cormorant", serif;
+  font-size: 2.3vw;
+  height: 10vh;
+  width: 25vw;
+  padding: 0px 2px;
+  align-items: center;
+  background-color: #e8c1cc;
+  border-radius: 1vw;
+}
+.imglogo {
+  height: 8vh;
+  width: 10vw;
+}
+.sombra {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #301b21;
+}
+
+/* Fin Encabezado */
+
+/* Inicio de Footer */
+.footer {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e8c1cc;
+  text-align: center;
+  height: 4vh;
+  align-items: center;
+  font-size: 2.5vh;
+}
+
+/* Fin Footer */
+
+/* Inicia configuracion de Main */
+.mainContainer {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100vw;
+  
+  background-color: #e8c1cc70;
+  background: #301b21;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 4vh;
+  margin-top: 0;
+  justify-content: center;
+  padding-top: 0vh;
+  background: linear-gradient(
+    to bottom,
+    #301b21 25%,
+    #c6707d 70%,
+    #e8c1cc 100%
+  );
+}
+.submaincontainer {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2vw;
+}
+.submaincontainer__m {
+  width: 100vw;
+  align-items: flex-start;
+}
+.submaincontainer .bienvenida {
+  font-family: "Cormorant", serif;
+  font-size: 5vw;
+  transition-property: color, color, rigth;
+  transition-duration: 3s;
+  color: #e8c1cc;
+  margin-top: 100px;
+}
+.submaincontainer .titulo2 {
+  color: #e8c1cc;
+  font-family: "Cormorant", serif;
+  font-size: 2.5vw;
+  margin: 0%;
+}
+.submaincontainer .titulo2__m {
+  text-shadow: -2px -2px 0 #301b21, 2px -2px 0 #301b21, -2px 2px 0 #301b21,
+    2px 2px 0 #301b21;
+}
+.submaincontainer .bienvenida__m {
+  text-shadow: -2px -2px 0 #301b21, 2px -2px 0 #301b21, -2px 2px 0 #301b21,
+    2px 2px 0 #301b21;
+}
+.subimg {
+  image-rendering: crisp-edges;
+  background-image: url(../img/transpa_hairheader.webp);
+  background-size: cover;
+  background-position-x: center;
+}
+.mainContainer .cards {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.5vh;
+  box-sizing: border-box;
+}
+
+.mainContainer .cards .card {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3%;
+  background-color: #e9becabf;
+  border: #301b21 solid 1px;
+  padding: 0px;
+  padding-bottom: 0rem;
+  text-align: left;
+  font-size: 2vh;
+  box-sizing: border-box;
+}
+.mainContainer .cards__m {
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+}
+.mainContainer .cards .card .titulo {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Cormorant", serif;
+  font-size: 2vh;
+  text-align: center;
+  padding: 0.5vw;
+  background-color: #301b21;
+  color: #e8c1cc;
+}
+.linea {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 0;
+  border-top: 2px solid white;
+}
+.divbotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.btncentrado {
+  display: flex;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  text-align: center;
+  width: 15vh;
+  margin: 5px 0;
+  justify-content: center;
+}
+
+.centrado {
+  text-align: center;
+}
+.mainContainer .cards .card .texto {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  float: left;
+  text-align: justify;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.mainContainer .cards .card .img {
+  height: 10vh;
+  width: 10vw;
+  float: left;
+  margin-right: 7px;
+}
+.mainContainer .cards .card .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.cardancho {
+  width: 30vw;
+}
+
+/* finaliza Main INDEX*/
+/* Contacto */
+.form-contacto-width{
+  width: 35%;
+}
+.form-contacto {
+  width: 70%;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+/* GRID EN TIENDA */
+.mainContainer .cards__marg {
+  margin-bottom: 5px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.parent h3 {
+  background-color: #e8c1cc;
+  margin-top: 1px;
+  text-align: center;
+}
+.parent h3:hover {
+  font-weight: bolder;
+  color: #c6707d;
+}
+.parent img:hover {
+  transform: scale(101%);
+  transform: translate(-0.5rem, -1rem) rotate(3deg);
+}
+
+/* Servicio  */
+.mainContainer .cards__flexdir {
+  flex-direction: column;
+}
+.melimg{
+  width: 20vw;
+  border-radius: 2rem;
+}
+.meling::before{
+  content: "Maria Eugenia Leon";
+}
+.mainContainer .cards .card__modif {
+  padding: 1%;
+  margin: 1%;
+  width: 40%;
+  text-align: justify;
+  height: 100%;
+  font-size: large;
+  background-color: #e8c1cc;
+  
+}
+.mainContainer .cards .card .titulom {
+  
+  text-transform: uppercase;
+  font-family: "Cormorant", serif;
+  font-size: large;
+  text-align: center;
+  display: flex;
+  height: 10%;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: #301b21;
+  color: #e8c1cc;
+
+}
+.gridolcard {
+  display: grid;
+  gap: 0.3rem;
+  width: 95%;
+  height: 10vh;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.olcards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 80vw;
+  }
+.olcardstitulo {
+  color: #e8c1cc;
+  font-size: 2vw;
+}
+.olcards__item {
+  display: flex;
+  width: 90%; 
+  height: 20%;
+  align-items: flex-start;
+}
+.olcard {
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  font-size: 2rem;
+}
+
+.olcard__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; 
+}
+
+.olcard__content {
+  display: flex;
+  flex: 1 1 auto; 
+  flex-direction: column;
+  padding: 5px;
+  background-color: #e8c1cc;
+  font-size: medium;
+  top: 00%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out; 
+  transform: translate(0%,0%); 
+  position: relative;
+  z-index: 2;
+  height: 0%;
+}
+.olcard__title{
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.olcard__text{
+  font-size: 1vw;
+  text-align: justify;
+  height: 0%;
+  overflow: hidden;
+}
+.olcenter {
+  font-weight: bolder;
+  color: #301b21;
+  position: absolute;
+  top: 0%;
+  opacity: 1;
+}
+.olcard:hover .olcard__content {
+  margin-top: -50%;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+  z-index: 1;
+  height: 000%;
+}
+.olcard__image::before{
+  content: "";
+  display: block; 
+  padding-top: 40%;
+}
+
+.olcard__image--dermapen {
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/c_scale,w_300/v1660170047/proy/img-servicios/dermapen_df8k4q.webp);
+}
+
+.olcard__image--bbglow {
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/c_scale,w_300/v1660170047/proy/img-servicios/bbglow_huuo1l.webp);
+}
+
+
+.olcard__image--microder {
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/c_scale,w_300/v1660170047/proy/img-servicios/microdermabrasion_nkrnyr.webp);
+}
+
+
+@media (max-width: 1200px) {
+  .parent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cardancho {
+    width: 50vw;
+  }
+  .logo {
+    width: 35vw;
+    font-size: 3.5vw;
+  }
+  .olcards__item{
+    width: 90%;
+  }
+  .olcardstitulo {
+    font-size: 2vw;
+  }
+  .olcard__title{
+    font-size: 2vw;
+  }
+  .olcard__text{
+    font-size: 1.5vw;
+  }
+  .mainContainer .cards .card__modif {
+    font-size: medium;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .mainContainer .cards {
+    flex-direction: column;
+  }
+  .form-contacto-width{
+    width: 50%;
+  }
+  .mainContainer .cards .card__modif {
+    font-size: small;
+    overflow-y: scroll;
+  }
+  .mainContainer .cards .card .titulo {
+    writing-mode:vertical-lr;
+    text-orientation: upright;
+  }
+  .mainContainer .cards .card .titulom{
+    font-size: small;
+  }
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mainContainer {
+    width: 100vw;
+  }
+  .submaincontainer {
+    width: 100vw;
+    padding-top: 50px;
+  }
+  .footer {
+    height: auto;
+    font-size: 1.2vh;
+    flex-direction: column;
+  }
+  .header_ {
+    font-size: 1.5vh;
+  }
+  .mainContainer .cards .card {
+    height: 45vh;
+    font-size: 10px;
+    margin-top: 5%;
+  }
+  .cardancho {
+    width: 80vw;
+    height: 50vh;
+  }
+  .headerContainer_{
+    flex-direction: column;
+  }
+  .submaincontainer .bienvenida {
+    margin-top: 100px;
+    font-size: 10vw;
+  }
+  .logo {
+    height: 7vh;
+    font-weight: bold;
+  }
+  .submaincontainer .titulo2 {
+    font-size: 4vh;
+  }
+  .imglogo {
+    height: 6vh;
+    width: 12vw;
+  }
+  .submaincontainer .titulo2__m {
+    text-shadow: -1px -1px 0 #301b21, 1px -1px 0 #301b21, -1px 1px 0 #301b21,
+      1px 1px 0 #301b21;
+  }
+  .submaincontainer .bienvenida__m {
+    text-shadow: -1px -1px 0 #301b21, 1px -1px 0 #301b21, -1px 1px 0 #301b21,
+      1px 1px 0 #301b21;
+  }
+  .olcards__item{
+    width: 25vw;
+  }
+  .olcard__title{
+    font-size: 2.5vw;
+  }
+  .olcard__text{
+    font-size: 2vw;
+    
+  }
+  
+}
