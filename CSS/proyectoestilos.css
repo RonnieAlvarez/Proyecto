@@ -195,7 +195,6 @@ ion-icon {
   font-size: 1.5vh;
   box-sizing: border-box;
 }
-
 .mainContainer .cards .card {
   display: flex;
   flex-direction: row;
@@ -273,7 +272,6 @@ ion-icon {
 .cardancho {
   width: 30vw;
 }
-
 /* finaliza Main INDEX*/
 /* Contacto */
 .form-contacto-width{
