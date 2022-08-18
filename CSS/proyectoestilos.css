@@ -5,7 +5,6 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-size: 100%;
-  
 }
 
 .divbody {
@@ -178,6 +177,8 @@ ion-icon {
 .submaincontainer .bienvenida__m {
   text-shadow: -2px -2px 0 #301b21, 2px -2px 0 #301b21, -2px 2px 0 #301b21,
     2px 2px 0 #301b21;
+    margin-top: 15vh;
+    font-size: 6rem;
 }
 .subimg {
   image-rendering: crisp-edges;
@@ -189,7 +190,7 @@ ion-icon {
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   font-size: 1.5vh;
   box-sizing: border-box;
@@ -314,7 +315,7 @@ ion-icon {
   flex-direction: column;
 }
 .melimg{
-  width: 20vw;
+  width: 50vh;
   border-radius: 2rem;
 }
 .meling::before{
@@ -326,7 +327,7 @@ ion-icon {
   width: 40%;
   text-align: justify;
   height: 100%;
-  font-size: large;
+  font-size: 1.5rem;
   background-color: #e8c1cc;
   
 }
@@ -334,12 +335,12 @@ ion-icon {
   
   text-transform: uppercase;
   font-family: "Cormorant", serif;
-  font-size: large;
+  font-size: 3rem;
   text-align: center;
   display: flex;
-  height: 10%;
+  /* height: 4rem; */
   margin: 0px;
-  padding: 0px;
+  padding: 4px;
   justify-content: center;
   align-items: center;
   background-color: #301b21;
@@ -452,6 +453,15 @@ ion-icon {
 
 
 @media (max-width: 1200px) {
+  .mainContainer .cards .card__modif{
+    font-size: 2rem;
+  }
+  .mainContainer .cards .card .titulom{
+    font-size: 2rem;
+  }
+  .submaincontainer .bienvenida__m{
+    font-size: 4rem;
+  }
   .parent {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -461,6 +471,9 @@ ion-icon {
   .logo {
     width: 35vw;
     font-size: 3.5vw;
+  }
+  .melimg{
+    width: 20rem;
   }
   .olcards__item{
     width: 90%;
@@ -475,8 +488,9 @@ ion-icon {
     font-size: 1.5vw;
   }
   .mainContainer .cards .card__modif {
-    font-size: medium;
+    font-size: 1rem;
   }
+  
 }
 
 
@@ -506,7 +520,7 @@ ion-icon {
   }
   .submaincontainer {
     width: 100vw;
-    padding-top: 50px;
+    padding-top: 90px;
   }
   .footer {
     height: auto;
@@ -515,6 +529,15 @@ ion-icon {
   }
   .header_ {
     font-size: 1.5vh;
+    flex-direction: row;
+  }
+  .sociales, .horizontal{
+    flex-direction: column;
+  }
+  .mainContainer .cards .card--contacto {
+    height: 100%;
+    /* font-size: 10px; */
+    /* margin-top: 5%; */
   }
   .mainContainer .cards .card {
     height: 45vh;
@@ -529,19 +552,25 @@ ion-icon {
     flex-direction: column;
   }
   .submaincontainer .bienvenida {
-    margin-top: 100px;
+    margin-top: 30px;
     font-size: 10vw;
   }
   .logo {
     height: 7vh;
+    width: 60vw;
+    font-size: 3vh;
     font-weight: bold;
+    justify-content: center;
+  }
+  .imglogo{
+    height: 6vh;
+    width: 24vw;
+  }
+  .sociales .telefono{
+    font-size: 0;
   }
   .submaincontainer .titulo2 {
     font-size: 4vh;
-  }
-  .imglogo {
-    height: 6vh;
-    width: 12vw;
   }
   .submaincontainer .titulo2__m {
     text-shadow: -1px -1px 0 #301b21, 1px -1px 0 #301b21, -1px 1px 0 #301b21,
@@ -559,7 +588,23 @@ ion-icon {
   }
   .olcard__text{
     font-size: 2vw;
-    
   }
-  
+  .gridolcard{
+    grid-template-rows: 100px;
+  }
+  .olcards ul{
+    padding-left: 0%;
+  }
+  .melimg{
+    width: 10rem;
+  }
+  .submaincontainer .bienvenida__m{
+    margin-top: 8rem;
+  }
+  .cards {
+    margin-top: 5px;
+  }
+ /*  .mainContainer .cards .card{ */
+ /*    height: 20vh; */
+ /*  } */
 }
