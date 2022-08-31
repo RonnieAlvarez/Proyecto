@@ -149,6 +149,9 @@ ion-icon:hover {
   }
   .cardancho {
     width: 50vw;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 /* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
@@ -176,6 +179,11 @@ ion-icon:hover {
   }
   .cardancho {
     width: 80vw;
-    height: 90vh;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  main{
+    min-height: 100%;
   }
 }
