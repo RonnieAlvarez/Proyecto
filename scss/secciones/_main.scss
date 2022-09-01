@@ -1,0 +1,48 @@
+
+main {
+    min-height: 77%;
+  }
+.centrar-horizontal{
+  margin:0 auto;
+}
+.centrar-vetical{
+  margin:auto 0;
+}
+  .sociales {
+    color: $rosa-200;
+    align-items: center;
+    font-size: 2vh;
+    a {
+    text-decoration: none;
+    color: none;
+    }
+}  
+  .cardancho {
+    width: 30vw;
+  }
+  .btnindex{
+    @include rfondo($rosa-200,$gray-800)
+  }
+
+  @media (max-width: 1200px) {
+    .cardancho {
+        width: 50vw;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+    }
+    
+
+  @media (max-width: 600px) {
+ .cardancho {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+    main{
+      min-height: 100%;
+    }
+  }
+  

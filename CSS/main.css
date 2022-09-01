@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Roboto:wght@400;700&display=swap");
+header {
+  min-height: 15%;
+}
+
+.beauty-spa {
+  font-family: "Cormorant", serif;
+}
+
+@media (max-width: 600px) {
+  .header_ {
+    font-size: 1.5vh;
+    flex-direction: row;
+  }
+}
+main {
+  min-height: 77%;
+}
+
+.centrar-horizontal {
+  margin: 0 auto;
+}
+
+.centrar-vetical {
+  margin: auto 0;
+}
+
+.sociales {
+  color: #c2909e;
+  align-items: center;
+  font-size: 2vh;
+}
+.sociales a {
+  text-decoration: none;
+  color: none;
+}
+
+.cardancho {
+  width: 30vw;
+}
+
+.btnindex {
+  background-color: #c2909e !important;
+  background-size: cover;
+  color: #343a40;
+}
+
+@media (max-width: 1200px) {
+  .cardancho {
+    width: 50vw;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .cardancho {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  main {
+    min-height: 100%;
+  }
+}
+.footer {
+  display: flex;
+  min-height: 7vh;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e8c1cc;
+  text-align: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    height: auto;
+    font-size: 1rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    height: auto;
+    font-size: 1rem;
+    flex-direction: column;
+  }
+}
+.divbotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btncentrado {
+  display: flex;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  text-align: center;
+  width: 15vh;
+  margin: 5px 0;
+  justify-content: center;
+}
+
+.form-contacto-width {
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  .form-contacto-width {
+    width: 50%;
+  }
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 80%;
+}
+
+.parent h3 {
+  background-color: #e8c1cc;
+  margin-top: 1px;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.parent h3:hover {
+  font-weight: bolder;
+  color: #c6707d;
+}
+
+.parent img:hover {
+  transform: scale(101%);
+  transform: translate(-0.5rem, -1rem) rotate(3deg);
+  /* border: #301b21 solid 1px;  */
+}
+
+.tarjeta {
+  box-shadow: 5px 5px 5px 5px #b77f8f;
+}
+
+.tiendacard {
+  width: 80%;
+}
+
+.mainContainer {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100vw;
+  min-height: 4vh;
+  margin-top: 0;
+  justify-content: center;
+  padding-top: 0vh;
+}
+
+.mainContainer .cards {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-size: 1.5vh;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .parent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+@media (max-width: 600px) {
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.mainContainer .cards {
+  flex-direction: column;
+}
+
+.mainContainer {
+  width: 100vw;
+}
+
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgba(232, 193, 204, 0.2156862745);
+}
+
+.img-servicios {
+  width: 30%;
+}
+
+.subimg {
+  background-image: url(../img/transpa_hairheader.webp);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.subimg-fondo {
+  background-image: url(../img/beautiful-flowers.webp);
+  background-size: cover;
+  background-position-x: center;
+}
+
+ion-icon {
+  font-size: 3vh;
+  color: #b77f8f;
+  margin-right: 1vh;
+}
+ion-icon:hover {
+  color: #343a40;
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("/img/loader4.gif") 50% 50% no-repeat #fff;
+  opacity: 0.8;
+}
+
+.fondo-rosa {
+  background-color: #e8c1cc !important;
+  background-size: cover;
+  color: #301b21;
+}
+
+.menu a:hover {
+  background-color: #c2909e;
+  color: #fff;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */
