@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    min-height: 7vh;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $rosa-100;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+@media (max-width:1200px){
+  .footer {
+    height: auto;
+    font-size: min(4vw ,1.2rem)!important;
+    flex-direction: column;
+  }
+}
+
+  @media (max-width: 600px) {
+    .footer {
+        height: auto;
+        font-size: min(5vw ,1.2rem)!important;
+        flex-direction: column;
+      }
+  }

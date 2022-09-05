@@ -1,0 +1,77 @@
+
+main {
+    min-height: 74%;
+    h1{box-sizing: content-box}
+    h2{
+      @extend %marco;
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: min(5vw ,1.2rem)!important;
+      @media (max-width: $smartphone) {
+        font-size: min(5vw ,1.5rem)!important;
+      }
+    }
+  }
+ .rotuindex{
+  @extend %marco;
+  font-size: min(5vw ,1.2rem)!important;
+ } 
+.centrar-horizontal{
+  margin:0 auto;
+}
+.centrar-vetical{
+  margin:auto 0;
+}
+  .sociales {
+    color: $rosa-200;
+    align-items: center;
+    font-size: 2vh;
+    a {
+    text-decoration: none;
+    color: none;
+    }
+}  
+  .cardancho {
+    width: 30vw;
+    @media (max-width: $smartphone) {
+      width: 100vw;
+      font-size: min(3.5vw ,1.1rem)!important;
+    }
+  }
+  .btnindex{
+    @include rfondo($rosa-900,$rosa-800)
+  }
+  .card-title{
+      font-size: min(5vw ,1.5rem)!important;
+      font-weight: 600;
+    }
+  
+  @media (max-width: $desktop) {
+    .cardancho {
+        width: 80%;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+      .altotarj{
+        min-height: 175px;
+        
+      }  
+    }
+    
+
+  @media (max-width: $smartphone ) {
+ .cardancho {
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+    main{
+      min-height: 100%;
+    }
+  .altotarj{
+    min-height: 120px;
+  }  
+  }
+      
