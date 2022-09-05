@@ -2,7 +2,7 @@
     @if $tamano < 1 {
       box-shadow: none;
     } @else if $tamano > 5 {
-      @warn "Invalid $depth `#{$tamano}` for mixin `card`.";
+      @warn "Tamaño invalido `#{$tamano}` para mixin `sombra`.";
     } @else {
       box-shadow: $tamano $tamano $tamano $tamano $color;
     }
@@ -13,3 +13,11 @@
     background-size: cover;
     color: $color;
  } 
+
+ %marco{
+  /* color: $rosa-400; */
+  background-color: $rosa-100;
+  border-radius: 10px;
+  border: 1px solid $rosa-400;
+  max-width: fit-content;
+ }

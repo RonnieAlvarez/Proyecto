@@ -1,7 +1,21 @@
 
 main {
-    min-height: 77%;
+    min-height: 74%;
+    h1{box-sizing: content-box}
+    h2{
+      @extend %marco;
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: min(5vw ,1.2rem)!important;
+      @media (max-width: $smartphone) {
+        font-size: min(5vw ,1.5rem)!important;
+      }
+    }
   }
+ .rotuindex{
+  @extend %marco;
+  font-size: min(5vw ,1.2rem)!important;
+ } 
 .centrar-horizontal{
   margin:0 auto;
 }
@@ -19,24 +33,36 @@ main {
 }  
   .cardancho {
     width: 30vw;
+    @media (max-width: $smartphone) {
+      width: 100vw;
+      font-size: min(3.5vw ,1.1rem)!important;
+    }
   }
   .btnindex{
-    @include rfondo($rosa-200,$gray-800)
+    @include rfondo($rosa-900,$rosa-800)
   }
-
-  @media (max-width: 1200px) {
+  .card-title{
+      font-size: min(5vw ,1.5rem)!important;
+      font-weight: 600;
+    }
+  
+  @media (max-width: $desktop) {
     .cardancho {
-        width: 50vw;
+        width: 80%;
         height: auto;
         margin-bottom: 1rem;
         margin-top: 1rem;
       }
+      .altotarj{
+        min-height: 175px;
+        
+      }  
     }
     
 
-  @media (max-width: 600px) {
+  @media (max-width: $smartphone ) {
  .cardancho {
-    width: 80vw;
+    width: auto;
     height: auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -44,5 +70,8 @@ main {
     main{
       min-height: 100%;
     }
+  .altotarj{
+    min-height: 120px;
+  }  
   }
-  
+      

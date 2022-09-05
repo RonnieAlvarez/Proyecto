@@ -1,26 +1,34 @@
-.divbotones {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .btncentrado {
-    display: flex;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    text-align: center;
-    width: 15vh;
-    margin: 5px 0;
-    justify-content: center;
-  }
-  .form-contacto-width {
-    width: 40%;
-  }
 
-  
-  @media (max-width: 600px) {
-    .form-contacto-width {
-      width: 50%;
-    }
-  
+
+.divbotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.btncentrado {
+  display: flex;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  text-align: center;
+  width: 15vh;
+  margin: 5px 0;
+  justify-content: center;
+}
+.tarjeta__alto{
+  height: 330px;
+}
+.form-contacto-width {
+  width: 40%;
+}
+
+@media (max-width: 1200px) {
+  .form-contacto-width {
+    width: 50%;
   }
-    
+}
+
+@media (max-width: 600px) {
+  .form-contacto-width {
+    width: 60%;
+  }
+}

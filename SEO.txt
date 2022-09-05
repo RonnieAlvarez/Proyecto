@@ -1,0 +1,40 @@
+-   Cambios en imagenes
+        -se cambio el formato de todas las imagenes a .webp.
+        -se cambio el tamaño para que estuvieran de acuerdo a lo requerido.
+        -se redujo el peso de los archivos con convenrtio.co y Photoshop.
+        -todos los archivos de imagenes se subieron a Cloudinary.
+
+-   Al pasar los archivos de imagenes a la nube el proyecto quedo pesando 
+    67,4 KB (69 114 bytes)
+
+-   Comfiguraciones Meta en los archivos html
+        -Index
+            <meta name="title" content="Mel Beauty & Spa">
+            <meta name="keywords" content="Salon de belleza, Salon de belleza alajuela,Sala de belleza y spa, Beauty & spa, Beauty, BBGlow, Dermapen, Salón de Belleza">
+            <meta name="description" content="La nueva sala de belleza y spa, con los mejores tratamientos de belleza.">
+            h1  Mel Beauty & Spa | Nuevo Look
+            h2  Los Mejores tratamientos faciales
+        -Nosotros
+            <meta title="Nosotros / Mel Beauty&Spa">
+            <meta keywords="Maria Eugenia Leon,Salon de belleza, Salon de belleza alajuela,Sala de belleza y spa, Beauty & spa, Salón de Belleza">
+            <meta description="En esta página encontraras detalles de nuestra historia y experiencia.">
+            h1  Mel Beauty & Spa | Maru León
+            h2  Imnovadores tratamientos para ti
+        -Servicios
+            <meta title="Servicios / Mel Beauty&Spa">
+            <meta keywords="BBGlow,Dermapen,Microdermabrasión,Salon de belleza, Salon de belleza alajuela,Sala de belleza y spa, Beauty & spa, Salón de Belleza">
+            <meta description="En esta página encontraras detalles sobre nuestros servicios.">
+            h1  Mel Beauty & Spa | Servicios
+            h2  Imnovadores tratamientos para ti
+        -Tienda
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta title="Productos / Mel Beauty&Spa">
+            <meta keywords="Iecsa,Doez,Nanoplasty,Noh,Soller,Microdermabrasión,Salon de belleza, Salon de belleza alajuela,Sala de belleza y spa, Beauty & spa, Salón de Belleza">
+            h1  Mel Beauty & Spa | Tienda
+            h2  Nuestros mejores Productos para ti
+        -Contacto
+            <meta title="Contacto / Mel Beauty&Spa">
+            <meta keywords="Alajuela,Costa Rica,Salon de belleza, Salon de belleza alajuela,Sala de belleza y spa, Beauty & spa, Salón de Belleza,Maria Eugenia Leon">
+            <meta description="En esta página encontraras nuestra Ubicación, y registro de contacto para recibir información de promociones.">
+            h1  Mel Beauty & Spa | Ubicación
+            h2  Donde esta ubicado Mel Beauty? 

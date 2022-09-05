@@ -2,8 +2,8 @@
 //@import "./variables/extend";
 //@import "./variables/typo"; 
 //@import "./variables/tamanos";
-@import "./Variables/extends";
 @import "./colores/colores";
+@import "./Variables/extends";
 @import "./secciones/header"; 
 @import "./secciones/main"; 
 @import "./secciones/footer";
@@ -27,12 +27,15 @@
     width: 30%;
   }
   .subimg {
-    background-image: url(../img/transpa_hairheader.webp);
+    background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142045/proy/fondos/transpa_hairheader_m6fhzf.webp);
+ @media(max-width :$smartphone) {
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp)!important;  
+ }
     background-size: cover;
     background-position-x: center;
-  }
+     }
   .subimg-fondo {
-    background-image: url(../img/beautiful-flowers.webp);
+    background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp);
     background-size: cover;
     background-position-x: center;
   }
@@ -51,7 +54,7 @@
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url("/img/loader4.gif") 50% 50% no-repeat $white;
+    background: url("https://res.cloudinary.com/rac506/image/upload/v1662143407/proy/fondos/loader4_ahglei.gif") 50% 50% no-repeat $white;
     opacity: 0.8;
   }
   .fondo-rosa {

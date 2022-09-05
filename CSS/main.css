@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Roboto:wght@400;700&display=swap");
+.rotuindex, main h2 {
+  /* color: $rosa-400; */
+  background-color: #f4cbd7;
+  border-radius: 10px;
+  border: 1px solid #c6707d;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 header {
   min-height: 15%;
 }
@@ -9,12 +19,29 @@ header {
 
 @media (max-width: 600px) {
   .header_ {
-    font-size: 1.5vh;
+    font-size: min(3vw, 1.2rem) !important;
     flex-direction: row;
   }
 }
 main {
-  min-height: 77%;
+  min-height: 74%;
+}
+main h1 {
+  box-sizing: content-box;
+}
+main h2 {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: min(5vw, 1.2rem) !important;
+}
+@media (max-width: 600px) {
+  main h2 {
+    font-size: min(5vw, 1.5rem) !important;
+  }
+}
+
+.rotuindex {
+  font-size: min(5vw, 1.2rem) !important;
 }
 
 .centrar-horizontal {
@@ -38,30 +65,47 @@ main {
 .cardancho {
   width: 30vw;
 }
+@media (max-width: 600px) {
+  .cardancho {
+    width: 100vw;
+    font-size: min(3.5vw, 1.1rem) !important;
+  }
+}
 
 .btnindex {
-  background-color: #c2909e !important;
+  background-color: #f8e7ec !important;
   background-size: cover;
-  color: #343a40;
+  color: #301b21;
+}
+
+.card-title {
+  font-size: min(5vw, 1.5rem) !important;
+  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
   .cardancho {
-    width: 50vw;
+    width: 80%;
     height: auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
+  .altotarj {
+    min-height: 175px;
+  }
 }
 @media (max-width: 600px) {
   .cardancho {
-    width: 80vw;
+    width: auto;
     height: auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
   main {
     min-height: 100%;
+  }
+  .altotarj {
+    min-height: 120px;
   }
 }
 .footer {
@@ -71,23 +115,23 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #e8c1cc;
+  background-color: #f4cbd7;
   text-align: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1200px) {
   .footer {
     height: auto;
-    font-size: 1rem;
+    font-size: min(4vw, 1.2rem) !important;
     flex-direction: column;
   }
 }
 @media (max-width: 600px) {
   .footer {
     height: auto;
-    font-size: 1rem;
+    font-size: min(5vw, 1.2rem) !important;
     flex-direction: column;
   }
 }
@@ -107,13 +151,22 @@ main {
   justify-content: center;
 }
 
+.tarjeta__alto {
+  height: 330px;
+}
+
 .form-contacto-width {
   width: 40%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .form-contacto-width {
     width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .form-contacto-width {
+    width: 60%;
   }
 }
 .parent {
@@ -126,7 +179,7 @@ main {
 }
 
 .parent h3 {
-  background-color: #e8c1cc;
+  background-color: #f4cbd7;
   margin-top: 1px;
   text-align: center;
   font-size: 3vh;
@@ -201,7 +254,7 @@ main {
 html,
 body {
   height: 100%;
-  background-color: rgba(232, 193, 204, 0.2156862745);
+  background-color: #f8e7ec;
 }
 
 .img-servicios {
@@ -209,13 +262,18 @@ body {
 }
 
 .subimg {
-  background-image: url(../img/transpa_hairheader.webp);
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142045/proy/fondos/transpa_hairheader_m6fhzf.webp);
   background-size: cover;
   background-position-x: center;
 }
+@media (max-width: 600px) {
+  .subimg {
+    background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp) !important;
+  }
+}
 
 .subimg-fondo {
-  background-image: url(../img/beautiful-flowers.webp);
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp);
   background-size: cover;
   background-position-x: center;
 }
@@ -236,12 +294,12 @@ ion-icon:hover {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url("/img/loader4.gif") 50% 50% no-repeat #fff;
+  background: url("https://res.cloudinary.com/rac506/image/upload/v1662143407/proy/fondos/loader4_ahglei.gif") 50% 50% no-repeat #fff;
   opacity: 0.8;
 }
 
 .fondo-rosa {
-  background-color: #e8c1cc !important;
+  background-color: #f4cbd7 !important;
   background-size: cover;
   color: #301b21;
 }
