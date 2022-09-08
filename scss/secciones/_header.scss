@@ -5,7 +5,13 @@ header {
   .beauty-spa {
     font-family: "Cormorant", serif;
   }
-  
+
+  nav_link{
+    &:hover{
+      background-color: $rosa-800!important;
+      color: $rosa-900;
+  }
+}
 
 @media (max-width: $smartphone) {
 .header_ {
