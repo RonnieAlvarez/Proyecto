@@ -6,7 +6,6 @@
 @import "./secciones/footer";
 @import "./secciones/contacto";
 @import "./secciones/tienda";
-
 * {
   margin: 0%;
   padding: 0;
@@ -33,7 +32,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 /* hasta aqui es el codigo del cambio de color del scroller */
-
 .img-servicios {
   width: 30%;
 }
@@ -74,7 +72,6 @@ ion-icon {
   background-size: cover;
   color: $rosa-800;
 }
-
 .menu {
   .active {
     border-radius: 15px;
@@ -89,5 +86,3 @@ ion-icon {
     }
   }
 }
-
-
