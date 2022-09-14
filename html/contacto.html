@@ -106,11 +106,13 @@
         <div class="row justify-content-evenly justify-content-center my-1 align-items-center">
           <div class="card align-items-center col-md-4 fondo-rosa pb-1 rounded my-3 mx-5 tarjeta" style="width:auto">
             <h3 class="card-title">Ubicación</h3>
+<!-- ORGULLOSOS -->            
+            <w aria-hidden="true"><l style="animation-delay: 860ms">O</l><l style="animation-delay: 890ms">r</l><l style="animation-delay: 920ms">g</l><l style="animation-delay: 950ms">u</l><l style="animation-delay: 980ms">l</l><l style="animation-delay: 1010ms">l</l><l style="animation-delay: 1040ms">o</l><l style="animation-delay: 1070ms">s</l><l style="animation-delay: 1100ms">o</l><l style="animation-delay: 1130ms">s</l></w>
             <!-- Ubicacion del local por medio de google maps -->
             <div>
               <iframe class="rounded border border-secondary "
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.017199729877!2d-84.21260320108617!3d10.01543760543647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f92db2dbd2c3%3A0x72bc22f6cf1d53a8!2sPlaza%20Real%20Alajuela!5e0!3m2!1ses!2scr!4v1658359782308!5m2!1ses!2scr"
-                width="100%" height="300px" allowfullscreen="" loading="lazy"
+                width="100%" height="325px" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
@@ -119,37 +121,41 @@
             class="card rounded align-items-center fondo-rosa col-md-4 form-contacto-width mb-2 tarjeta tarjeta__alto">
             <h3 class="card-title text-center ">Registro</h3>
             <!-- formulario de registro -->
-            <form action="" class="d-flex my-3  align-content-center ">
-              <div>
-                <label class="form-label col-md-5" for="fnombre">Nombre Completo:</label>
-                <input class="form-control-md col-md-6" type="text" name="fnombre" id="fnombre"
+            <form action="" class="container d-flex mb-3 m-0 p-0 align-content-center ">
+              <div class="container h-100 m-0 p-0">
+                <label class="form-label col-form-label py-0" for="fnombre">Nombre Completo:</label>
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu " type="text" name="fnombre" id="fnombre"
                   placeholder="Nombre y Apellido" />
-                <label class="form-label col-md-5" for="email">Correo eléctronico:</label>
-                <input class="form-control-md col-md-6" type="email" placeholder="correo@dominio.ext" id="email"
+                <label class="form-label col-form-label py-0" for="email">Correo eléctronico:</label>
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="email" placeholder="correo@dominio.ext" id="email"
                   name="email" />
-                <label class="form-label col-md-5" for="ftelefono">Celular:</label>
-                <input class="form-control-md col-md-6" type="tel" placeholder="No. teléfono" name="ftelefono"
+                <label class="form-label col-form-label py-0" for="ftelefono">Celular:</label>
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="tel" placeholder="No. teléfono" name="ftelefono"
                   maxlength="8" id="telefono">
-                <label class="form-label lh-lg col-md-5" for="fedad">Edad:</label>
-                <input class="form-control-md col-md-6" type="number" name="fedad" id="fedad" placeholder="+18" min="18"
-                  max="99" /><br>
-                <label class="form-label lh-lg col-md-5" for="ftipopelo">Tipo Cabello:</label>
-                <select id="ftipopelo" name="ftipopelo">
+                <label class="form-label col-form-label py-0" for="fedad">Edad:</label>
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="number" name="fedad" id="fedad" placeholder="+18" min="18"
+                  max="99" />
+                  <div class="container m-0 p-0  d-flex align-items-center justify-content-center">
+                <label class="form-label col-form-label fs-6 py-0 mb-1" for="ftipopelo">Tipo Cabello:</label>
+                <select class="formu py-0 mb-1 lh-1 col-3 me-1" id="ftipopelo" name="ftipopelo">
                   <option value="Lacio">Lacio</option>
                   <option value="Rizo">Rizo</option>
                   <option value="Ondulado">Ondulado</option>
                 </select>
-                <label class="form-label col-md-5 flargopelo">Largo Cabello:</label>
-                <select id="flargopelo" name="flargopelo">
-                  <option value="corto">Corto</option>
+                <label class="form-label small col-form-label py-0 mb-1 flargopelo">Largo Cabello:</label>
+                <select class="formu py-0 mb-1 col-3 lh-1 " id="flargopelo" name="flargopelo">
+                  <option class="formu" value="corto">Corto</option>
                   <option value="mediano">Mediano</option>
                   <option value="largo">Largo</option>
                   <option value="xlargo">Extra Largo</option>
-                </select><br>
-                <label class="form-check-label" for="masculino">Masculino</label>
-                <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino" />
-                <label class="form-check-label" for="femenino">Femenino</label>
+                </select>
+              </div>
+                <div class="container m-0 d-flex justify-content-center">
+                <label class=" form-check-label small me-2" for="masculino">Masculino</label>
+                <input class="form-check-input me-3" type="radio" name="sexo" id="masculino" value="Masculino" />
+                <label class="form-check-label me-2" for="femenino">Femenino</label>
                 <input class="form-check-input" type="radio" name="sexo" id="femenino" value="Femenino" /><br>
+              </div>
                 <div class="divbotones">
                   <input class="btncentrado" type="submit" value="Enviar" />
                   <input class="btncentrado" type="reset" value="Borrar" />

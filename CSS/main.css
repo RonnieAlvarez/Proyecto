@@ -27,12 +27,22 @@ main {
   main h1 {
     box-sizing: content-box; }
   main h2 {
+    animation-duration: 2s;
+    animation-name: slidein;
     padding-left: 8px;
     padding-right: 8px;
     font-size: 1.2rem !important; }
     @media (max-width: 600px) {
       main h2 {
         font-size: 1.5rem !important; } }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
 
 .rotuindex {
   font-size: 1.2rem !important; }
@@ -121,26 +131,87 @@ main {
 
 .btncentrado {
   display: flex;
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   text-align: center;
   width: 15vh;
-  margin: 5px 0;
+  margin: 3px 0;
   justify-content: center; }
 
 .tarjeta__alto {
-  height: 330px; }
+  height: auto; }
 
 .form-contacto-width {
   width: 40%; }
 
+.formu {
+  background-color: #f8f9fa; }
+  .formu::placeholder {
+    padding: 0%;
+    margin: 0%;
+    color: #b77f8f !important;
+    font-style: italic !important;
+    background-color: #f8f9fa;
+    background-size: 100% !important; }
+
+select {
+  /* styling */
+  background-color: #f8f9fa;
+  border: thin solid #b77f8f;
+  color: #b77f8f;
+  font-style: italic !important;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none; }
+
 @media (max-width: 1200px) {
   .form-contacto-width {
-    width: 50%; } }
+    width: 65%; }
+  .tarjeta__alto {
+    height: auto; } }
 
 @media (max-width: 600px) {
   .form-contacto-width {
-    width: 60%; } }
+    width: 85%; }
+  .tarjeta__alto {
+    height: auto; } }
+
+l {
+  display: inline-block;
+  will-change: transform, opacity;
+  opacity: 0;
+  animation-name: slideUpLetter;
+  animation-duration: .75s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+w {
+  display: inline-block; }
+
+@keyframes slideUpLetter {
+  0% {
+    transform: translate3d(0, 50%, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@keyframes slideDownLetter {
+  0% {
+    transform: translate3d(0, -50%, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
 
 .parent {
   display: grid;
