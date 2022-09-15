@@ -23,7 +23,7 @@ nav_link:hover {
 
 /* formato utilizado en todos los archivos html */
 main {
-  min-height: 74%; }
+  min-height: 78%; }
   main h1 {
     box-sizing: content-box; }
   main h2 {
@@ -94,6 +94,8 @@ main {
     height: auto;
     margin-bottom: 1rem;
     margin-top: 1rem; }
+  main {
+    min-height: 78%; }
   .altotarj {
     min-height: 175px; } }
 
