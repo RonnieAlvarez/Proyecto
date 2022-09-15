@@ -1,10 +1,10 @@
 .gri-nosotros {
-  height: 100vh;
+  height: 85vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px auto 7vh;
+  grid-template-rows: 0vh auto 7vh;
   @media (max-width: $smartphone) {
-    grid-template-rows: 150px auto 7vh;
+    grid-template-rows: 0vh auto 7vh;
   }
   grid-template-areas:
     "aheader"

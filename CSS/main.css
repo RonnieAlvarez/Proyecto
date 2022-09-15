@@ -172,7 +172,7 @@ select {
   display: inline-block !important;
   font: inherit;
   line-height: 1em;
-  padding: 0.5em 3.5em 0.5em 1em;
+  padding: 0.5em 0.5em 0.5em 1em;
   margin: 0;
   box-sizing: border-box;
   -webkit-appearance: none; }
@@ -215,14 +215,14 @@ select {
   background: url(https://res.cloudinary.com/rac506/image/upload/v1663175708/proy/img-servicios/800x533-microdermabrasion_cgh6w0.webp) no-repeat -9999px -9999px; }
 
 .gri-nosotros {
-  height: 100vh;
+  height: 85vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px auto 7vh;
+  grid-template-rows: 0vh auto 7vh;
   grid-template-areas: "aheader" "amain" "afooter"; }
   @media (max-width: 600px) {
     .gri-nosotros {
-      grid-template-rows: 150px auto 7vh; } }
+      grid-template-rows: 0vh auto 7vh; } }
 
 .alto-nosotros {
   min-height: 100%; }
