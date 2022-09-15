@@ -219,7 +219,7 @@ select {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px auto 7vh;
-  grid-template-areas: 'aheader' 'amain' 'afooter'; }
+  grid-template-areas: "aheader" "amain" "afooter"; }
   @media (max-width: 600px) {
     .gri-nosotros {
       grid-template-rows: 150px auto 7vh; } }
