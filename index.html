@@ -126,15 +126,15 @@
           </div>
           <div class="col-md-6">
             <label for="inputState" class="form-label">Provincia</label>
-            <select id="inputState" class="form-select-sm">
-              <option selected="">Selecciona...</option>
-              <option>San José</option>
-              <option>Alajuela</option>
-              <option>Cartago</option>
-              <option>Heredia</option>
-              <option>Guanacaste</option>
-              <option>Puntarenas</option>
-              <option>Limón</option>
+            <select id="inputState" data-style="selectpicker" class="form-select selectpicker formu py-0 mb-1 col-sm-2 lh-1 ">
+              <option selected="">Prov..</option>
+              <option class="form-option-special" data-color="#FF8C00">San José</option>
+              <option class="form-option-special" data-color="#FF8C00">Alajuela</option>
+              <option class="form-option-special" data-color="#FF8C00">Cartago</option>
+              <option class="form-option-special">Heredia</option>
+              <option class="form-option-special">Guanacaste</option>
+              <option class="form-option-special">Puntarenas</option>
+              <option class="form-option-special">Limón</option>
             </select>
           </div>
           <div class="col-md-6">
@@ -175,7 +175,10 @@
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- script del Loader -->
   <script type="text/javascript"> $(window).load(function () { $(".loader").fadeOut("slow"); }); </script>
+  <!-- precarga imgs de servicios -->
+  <div id="preload-01"></div> <div id="preload-02"></div> <div id="preload-03"></div>
 </body>
 
 </html>

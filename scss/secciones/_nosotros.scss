@@ -1,0 +1,26 @@
+.gri-nosotros{
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 100px auto 7vh;
+@media (max-width: $smartphone) {
+    grid-template-rows: 150px auto 7vh;
+}
+grid-template-areas: 
+  'aheader'
+  'amain'
+  'afooter';
+
+}
+.alto-nosotros{
+min-height: 100%;
+}
+.header-nosotros{
+    grid-area: aheader;
+}
+.footer-nosotros{
+    grid-area:afooter;
+}
+.main-nosotros{
+    grid-area: amain;
+}

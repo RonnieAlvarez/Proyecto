@@ -5,6 +5,8 @@
 @import "./secciones/main";
 @import "./secciones/footer";
 @import "./secciones/contacto";
+@import "./secciones/servicios";
+@import "./secciones/nosotros";
 @import "./secciones/tienda";
 * {
   margin: 0%;
@@ -47,6 +49,7 @@ body::-webkit-scrollbar-thumb {
   background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp);
   background-size: cover;
   background-position-x: center;
+  
 }
 ion-icon {
   font-size: 3vh;

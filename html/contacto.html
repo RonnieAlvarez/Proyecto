@@ -106,8 +106,6 @@
         <div class="row justify-content-evenly justify-content-center my-1 align-items-center">
           <div class="card align-items-center col-md-4 fondo-rosa pb-1 rounded my-3 mx-5 tarjeta" style="width:auto">
             <h3 class="card-title">Ubicación</h3>
-<!-- ORGULLOSOS -->            
-            <w aria-hidden="true"><l style="animation-delay: 860ms">O</l><l style="animation-delay: 890ms">r</l><l style="animation-delay: 920ms">g</l><l style="animation-delay: 950ms">u</l><l style="animation-delay: 980ms">l</l><l style="animation-delay: 1010ms">l</l><l style="animation-delay: 1040ms">o</l><l style="animation-delay: 1070ms">s</l><l style="animation-delay: 1100ms">o</l><l style="animation-delay: 1130ms">s</l></w>
             <!-- Ubicacion del local por medio de google maps -->
             <div>
               <iframe class="rounded border border-secondary "
@@ -124,38 +122,44 @@
             <form action="" class="container d-flex mb-3 m-0 p-0 align-content-center ">
               <div class="container h-100 m-0 p-0">
                 <label class="form-label col-form-label py-0" for="fnombre">Nombre Completo:</label>
-                <input class="form-control form-control-sm col-12 py-0 mb-1 formu " type="text" name="fnombre" id="fnombre"
-                  placeholder="Nombre y Apellido" />
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu " type="text" name="fnombre"
+                  id="fnombre" placeholder="Nombre y Apellido" />
                 <label class="form-label col-form-label py-0" for="email">Correo eléctronico:</label>
-                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="email" placeholder="correo@dominio.ext" id="email"
-                  name="email" />
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="email"
+                  placeholder="correo@dominio.ext" id="email" name="email" />
                 <label class="form-label col-form-label py-0" for="ftelefono">Celular:</label>
-                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="tel" placeholder="No. teléfono" name="ftelefono"
-                  maxlength="8" id="telefono">
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="tel" placeholder="No. teléfono"
+                  name="ftelefono" maxlength="8" id="telefono">
                 <label class="form-label col-form-label py-0" for="fedad">Edad:</label>
-                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="number" name="fedad" id="fedad" placeholder="+18" min="18"
-                  max="99" />
-                  <div class="container m-0 p-0  d-flex align-items-center justify-content-center">
-                <label class="form-label col-form-label fs-6 py-0 mb-1" for="ftipopelo">Tipo Cabello:</label>
-                <select class="formu py-0 mb-1 lh-1 col-3 me-1" id="ftipopelo" name="ftipopelo">
-                  <option value="Lacio">Lacio</option>
-                  <option value="Rizo">Rizo</option>
-                  <option value="Ondulado">Ondulado</option>
-                </select>
-                <label class="form-label small col-form-label py-0 mb-1 flargopelo">Largo Cabello:</label>
-                <select class="formu py-0 mb-1 col-3 lh-1 " id="flargopelo" name="flargopelo">
-                  <option class="formu" value="corto">Corto</option>
-                  <option value="mediano">Mediano</option>
-                  <option value="largo">Largo</option>
-                  <option value="xlargo">Extra Largo</option>
-                </select>
-              </div>
+                <input class="form-control form-control-sm col-12 py-0 mb-1 formu" type="number" name="fedad" id="fedad"
+                  placeholder="+18" min="18" max="99" />
+                <div class="container m-0 p-0  d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column col-sm-8 col-md-4 flex-wrap align-content-center align-items-center">
+                    <label class="form-label col-form-label fs-6 py-0 mb-1" for="ftipopelo">Tipo Cabello:</label>
+                    <select class="selectpicker formu py-0 mb-1 lh-1 me-1 col-2" data-style="selectpicker"
+                      id="ftipopelo" name="ftipopelo">
+                      <option class="form-option-special" value="Lacio">Lacio</option>
+                      <option class="form-option-special" value="Rizo">Rizo</option>
+                      <option class="form-option-special" value="Ondulado">Ondulado</option>
+                    </select>
+                  </div>
+                  <div class="d-flex flex-column col-sm-8 col-md-4  flex-wrap align-content-center align-items-center ">
+                    <label class="form-label small col-form-label py-0 mb-1 flargopelo">Largo Cabello:</label>
+                    <select class="selectpicker formu py-0 mb-1 lh-1 col-2" data-style="selectpicker" id="flargopelo"
+                      name="flargopelo">
+                      <option class="form-option-special" value="corto">Corto</option>
+                      <option class="form-option-special" value="mediano">Mediano</option>
+                      <option class="form-option-special" value="largo">Largo</option>
+                      <option class="form-option-special" value="xlargo">Extra Largo</option>
+                    </select>
+                  </div>
+                </div>
                 <div class="container m-0 d-flex justify-content-center">
-                <label class=" form-check-label small me-2" for="masculino">Masculino</label>
-                <input class="form-check-input me-3" type="radio" name="sexo" id="masculino" value="Masculino" />
-                <label class="form-check-label me-2" for="femenino">Femenino</label>
-                <input class="form-check-input" type="radio" name="sexo" id="femenino" value="Femenino" /><br>
-              </div>
+                  <label class=" form-check-label small me-2" for="masculino">Masculino</label>
+                  <input class="form-check-input me-3" type="radio" name="sexo" id="masculino" value="Masculino" />
+                  <label class="form-check-label me-2" for="femenino">Femenino</label>
+                  <input class="form-check-input" type="radio" name="sexo" id="femenino" value="Femenino" /><br>
+                </div>
                 <div class="divbotones">
                   <input class="btncentrado" type="submit" value="Enviar" />
                   <input class="btncentrado" type="reset" value="Borrar" />

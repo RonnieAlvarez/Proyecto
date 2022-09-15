@@ -31,19 +31,33 @@
 }
 select {
   /* styling */
-  background-color: $gray-100;
-  border: thin solid $rosa-300;
-  color: $rosa-300;
+  background-color: $gray-100!important;
+  border: thin solid $rosa-300!important;
+  color: $rosa-300!important;
   font-style: italic!important;
-  border-radius: 4px;
-  display: inline-block;
+  $form-select-color:$rosa-300!important;
+  border-radius: 3px;
+  display: inline-block!important;
   font: inherit;
-  line-height: 1.5em;
+  line-height: 1em;
   padding: 0.5em 3.5em 0.5em 1em;
   margin: 0;      
   box-sizing: border-box;
   -webkit-appearance: none;
 }
+
+.parent1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 4 / 3; }
+  .div2 { grid-area: 4 / 1 / 5 / 2; }
+  .div3 { grid-area: 4 / 2 / 5 / 3; }
+
 
 @media (max-width: 1200px) {
   .form-contacto-width {
@@ -56,31 +70,10 @@ select {
 
 @media (max-width: 600px) {
   .form-contacto-width {
-    width: 85%;
+    width: auto;
   }
   .tarjeta__alto {
     height: auto;
   }
 }
 
-l {
-  display: inline-block;
-  will-change: transform, opacity;
-  opacity: 0;
-  animation-name: slideUpLetter;
-  animation-duration: .75s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-w { display: inline-block; }
-@keyframes slideUpLetter {
-  0%   { transform: translate3d(0, 50%, 0); opacity: 0;}
-  50%  { opacity: 1;}
-  100% { transform: translate3d(0, 0, 0); opacity: 1;}
-}
-
-@keyframes slideDownLetter {
-  0%   { transform: translate3d(0, -50%, 0); opacity: 0;}
-  50%  { opacity: 1;}
-  100% { transform: translate3d(0, 0, 0); opacity: 1;}
-}

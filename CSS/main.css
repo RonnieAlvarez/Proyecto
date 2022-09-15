@@ -80,6 +80,14 @@ main {
   font-size: 1.5rem !important;
   font-weight: 600; }
 
+.form-option-special {
+  color: #f8f9fa !important;
+  background: #c2909e !important; }
+
+.selectpicker {
+  background: #b77f8f !important;
+  color: #fff !important; }
+
 @media (max-width: 1200px) {
   .cardancho {
     width: 60%;
@@ -156,18 +164,34 @@ main {
 
 select {
   /* styling */
-  background-color: #f8f9fa;
-  border: thin solid #b77f8f;
-  color: #b77f8f;
+  background-color: #f8f9fa !important;
+  border: thin solid #b77f8f !important;
+  color: #b77f8f !important;
   font-style: italic !important;
-  border-radius: 4px;
-  display: inline-block;
+  border-radius: 3px;
+  display: inline-block !important;
   font: inherit;
-  line-height: 1.5em;
+  line-height: 1em;
   padding: 0.5em 3.5em 0.5em 1em;
   margin: 0;
   box-sizing: border-box;
   -webkit-appearance: none; }
+
+.parent1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+
+.div1 {
+  grid-area: 1 / 1 / 4 / 3; }
+
+.div2 {
+  grid-area: 4 / 1 / 5 / 2; }
+
+.div3 {
+  grid-area: 4 / 2 / 5 / 3; }
 
 @media (max-width: 1200px) {
   .form-contacto-width {
@@ -177,41 +201,40 @@ select {
 
 @media (max-width: 600px) {
   .form-contacto-width {
-    width: 85%; }
+    width: auto; }
   .tarjeta__alto {
     height: auto; } }
 
-l {
-  display: inline-block;
-  will-change: transform, opacity;
-  opacity: 0;
-  animation-name: slideUpLetter;
-  animation-duration: .75s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards; }
+#preload-01 {
+  background: url(https://res.cloudinary.com/rac506/image/upload/v1663175708/proy/img-servicios/800x532-dermapen_pvm9xf.webp) no-repeat -9999px -9999px; }
 
-w {
-  display: inline-block; }
+#preload-02 {
+  background: url(https://res.cloudinary.com/rac506/image/upload/v1663175708/proy/img-servicios/800x532-bbglow_ckntow.webp) no-repeat -9999px -9999px; }
 
-@keyframes slideUpLetter {
-  0% {
-    transform: translate3d(0, 50%, 0);
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1; } }
+#preload-03 {
+  background: url(https://res.cloudinary.com/rac506/image/upload/v1663175708/proy/img-servicios/800x533-microdermabrasion_cgh6w0.webp) no-repeat -9999px -9999px; }
 
-@keyframes slideDownLetter {
-  0% {
-    transform: translate3d(0, -50%, 0);
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1; } }
+.gri-nosotros {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto 7vh;
+  grid-template-areas: 'aheader' 'amain' 'afooter'; }
+  @media (max-width: 600px) {
+    .gri-nosotros {
+      grid-template-rows: 150px auto 7vh; } }
+
+.alto-nosotros {
+  min-height: 100%; }
+
+.header-nosotros {
+  grid-area: aheader; }
+
+.footer-nosotros {
+  grid-area: afooter; }
+
+.main-nosotros {
+  grid-area: amain; }
 
 .parent {
   display: grid;

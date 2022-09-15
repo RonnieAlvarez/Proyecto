@@ -67,6 +67,15 @@ main {
   font-weight: 600;
 }
 
+.form-option-special {
+  color: $gray-100!important;
+  background: $rosa-200!important;
+}
+.selectpicker{
+  background: $rosa-300!important;
+  color: #fff!important;
+  }
+
 @media (max-width: $desktop) {
   .cardancho {
     width: 60%;
